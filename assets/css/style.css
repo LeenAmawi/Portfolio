@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+:root{
+    --primary:#EB6CA7;
+}
+@keyframes spin {
+    from{
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+}
+  to{
+    transform: rotate(20deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}  
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    width:100%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    backdrop-filter: blur(100px);
+   z-index: 11111111111111;
+   /* position: absolute; */
+  padding: 35px;
+}
+ul{
+    list-style-type: none;
+}
+ul.flex{
+    gap: 60px;
+    /* padding: 0;
+    margin: 0; */
+}
+body{
+    background: radial-gradient(circle,rgba(255, 166, 201, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+.font{
+    font-family: "Comic Relief", system-ui;
+    font-size: 23px;
+    font-weight: 500;
+    color: white;
+}
+ul.flex a{
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out 0.5ms;
+    -webkit-transition: all 0.5s ease-in-out 0.5ms;
+    -moz-transition: all 0.5s ease-in-out 0.5ms;
+    -ms-transition: all 0.5s ease-in-out 0.5ms;
+    -o-transition: all 0.5s ease-in-out 0.5ms;
+    animation: spin infinite ease-in-out 0.5ms 10  reverse backwards ;
+    -webkit-animation: spin 2s ease-in-out infinite alternate ;
+    animation: spin infinite ease-in-out 0.5ms 10  reverse backwards ;
+    -webkit-animation: spin 2s ease-in-out infinite alternate ;
+}
+nav .flex p{
+    font-size: 50px;
+    font-weight: 600;
+}
+ nav .flex p::first-letter{
+    color: var(--primary);
+}
+label .open , label .close{
+    display: none;
+}
+
+ul.flex a:hover{
+    background-color: var(--primary);
+    padding: 5px 20px;
+    border-radius: 10000px;
+    -webkit-border-radius: 10000px;
+    -moz-border-radius: 10000px;
+    -ms-border-radius: 10000px;
+    -o-border-radius: 10000px;
+    animation: none;
+    -webkit-animation: none;
+    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.767);
+}
+ul.flex a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    background-color: white; 
+    bottom: 6px; 
+    left: 10px; 
+    right: 10px; 
+    transition: width 0.5s ease;
+}
+
+ul.flex a:hover::after {
+    width: calc(100% - 20px); 
+}
+nav p:hover{
+    padding: 0px 20px;
+    border-radius: 60px;
+    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.767);
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+
