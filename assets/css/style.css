@@ -46,7 +46,7 @@ nav{
 }
 header{
     padding-top: 200px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 
   
 }
@@ -58,6 +58,7 @@ header{
     background-attachment: fixed;
 
 }
+
 ul{
     list-style-type: none;
 }
@@ -218,6 +219,10 @@ header a{
     color: white;
     font-size: 50px;
 }
+.about {
+     padding-top: 100px;
+   
+}
 .about .courses{
      width: 100%;
      max-height:450px ;
@@ -248,4 +253,62 @@ header a{
     -moz-transition: all 2s ease-in-out 0.5ms;
     -ms-transition: all 2s ease-in-out 0.5ms;
     -o-transition: all 2s ease-in-out 0.5ms;
+}
+.projects{
+    padding: 60px 0px;
+}
+.projects img {
+     width: 95%;
+     height: 55%;
+     margin: auto;
+     padding-top: 15px;
+     border-radius: 55px ;
+     -webkit-border-radius: 55px ;
+     -moz-border-radius: 55px ;
+     -ms-border-radius: 55px ;
+     -o-border-radius: 55px ;
+      transition: all 0.4s ease-in-out 1ms;
+      -webkit-transition: all 0.4s ease-in-out 1ms;
+      -moz-transition: all 0.4s ease-in-out 1ms;
+      -ms-transition: all 0.4s ease-in-out 1ms;
+      -o-transition: all 0.4s ease-in-out 1ms;
+}
+.projects img:hover{
+    transform:rotate(2deg);
+    -webkit-transform:rotate(2deg);
+    -moz-transform:rotate(2deg);
+    -ms-transform:rotate(2deg);
+    -o-transform:rotate(2deg);
+    box-shadow: 4px 5px 10px white  ;
+}
+.card{
+    width: 90%;
+    border-radius: 55px ;
+    -webkit-border-radius: 55px ;
+    -moz-border-radius: 55px ;
+    -ms-border-radius: 55px ;
+    -o-border-radius: 55px ;
+    background-color: #EDB4CA ;
+    border: #EB6CA7 solid 3px;
+    
+}
+.projects a{
+      font-size: 23px;
+      font-weight: bolder;
+      color: white;
+      text-decoration: none;
+      text-shadow: none;
+      transition: all 0.4s ease-in-out 1ms;
+      -webkit-transition: all 0.4s ease-in-out 1ms;
+      -moz-transition: all 0.4s ease-in-out 1ms;
+      -ms-transition: all 0.4s ease-in-out 1ms;
+      -o-transition: all 0.4s ease-in-out 1ms;
+}
+.projects a:hover{
+    transform: translate(20px);
+    -webkit-transform: translate(20px);
+    -moz-transform: translate(20px);
+    -ms-transform: translate(20px);
+    -o-transform: translate(20px);
+    text-shadow: 5px 5px 2px var(--primary);
 }
