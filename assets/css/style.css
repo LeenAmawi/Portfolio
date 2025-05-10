@@ -50,7 +50,14 @@ header{
 
   
 }
+.backgroundStar{
+    background-image: url('../images/Wave\ Line.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 
+}
 ul{
     list-style-type: none;
 }
@@ -59,7 +66,7 @@ ul.flex{
     
 }
 body{
-    background: radial-gradient(circle,rgba(255, 166, 201, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: linear-gradient(250deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
 .font{
     font-family: "Comic Relief", system-ui;
@@ -152,7 +159,15 @@ nav p:hover{
     position: absolute;
     left: 90px;
     top: 50px;
-    z-index: 22;}
+    }
+    .pins{
+        width: 40px; 
+        height: 40px;
+         border:none;
+        position: absolute;
+        right: 100px;
+        top: 50px;
+    }
 header  img{
     max-width: 500px;
     max-height: 500px;
@@ -182,17 +197,14 @@ h1{
 }
 h1 span{
     color: var(--primary);
+    text-shadow: 3px 2px 5px white ;
+
 }
 p{
   font-size: 30px;
   font-family: "Comic Relief", system-ui;
 
 }
-header a{
-    color: white;
-    font-size: 50px;
-}
-
 h2{
     font-size: 60px;
     color: var(--primary);
@@ -200,6 +212,11 @@ h2{
     font-family: "Comic Relief", system-ui;
     width: 100%;
     margin-bottom: 30px;
+    text-shadow: 3px 2px 5px white ;
+}
+header a{
+    color: white;
+    font-size: 50px;
 }
 .about .courses{
      width: 100%;
@@ -211,12 +228,7 @@ h2{
      -ms-transition: all 2s ease-in-out 0.5ms;
      -o-transition: all 2s ease-in-out 0.5ms;
 }
-.about .pin{
-    position: absolute;
-    left: 1330px;
-    top: 50px;
-    z-index: 22;
-}
+
 .about .container .courses:hover{
     border-radius: 11px;
     -webkit-border-radius: 11px;
