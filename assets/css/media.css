@@ -56,6 +56,10 @@ display: inherit;
        header{
         padding-bottom: 100px;
        }
+       .pins{
+        position: absolute;
+        right: 70px;
+       }
         }
         
         @media screen and (max-width: 291px){
