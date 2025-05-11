@@ -356,7 +356,11 @@ form{
 #Contact{
     padding-top: 90px;
     padding-bottom: 30px ;
-}
+    background-image: url('../images/Cloudy.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y:bottom ;
+} 
 input:focus,textarea:focus{
     outline: none;
     border:var(--primary) solid 3px ;
