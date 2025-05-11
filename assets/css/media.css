@@ -15,9 +15,14 @@
    backdrop-filter: blur(70px);
        
 }
+nav .font .flex ul a{
+   color: #95c0f0;
+font-size: 30px;}
+
     .font{
         font-size: 35px;
         font-weight: 700;
+        
     }
 
 nav{
@@ -59,6 +64,13 @@ display: inherit;
        .pins{
         position: absolute;
         right: 70px;
+       }
+       .about,{
+        padding-top: 50px;
+       }
+       .projects{
+                padding-top: 110px;
+
        }
         }
         
